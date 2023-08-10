@@ -1,6 +1,6 @@
 
 ## Overview
-This proof of concept aims to demonstrate a versatile software platform inspired by LangChain, facilitating the creation of generative AI applications through portable plugins. These plugins, written in various languages, can run on different host platforms with support for cross-environment compatibility and security through the use of WebAssembly and Extism, a WebAssembly framework.
+This proof of concept aims to demonstrate a versatile software platform inspired by LangChain, facilitating the creation of generative AI applications through portable plugins. These plugins, written in various languages, can run on different host platforms with support for cross-environment compatibility and security through the use of [WebAssembly](https://webassembly.org/) and [Extism](https://extism.org/).
 
 ## Setup
 Create a "secrets.json" file in the root directory with your [SerpApi](https://serpapi.com/) and [OpenAI](https://openai.com/) API keys
