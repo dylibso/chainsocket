@@ -1,0 +1,12 @@
+# Ignore compiled binaries and generated files
+*.o
+*.out
+*.exe
+
+# Ignore the secrets.json file
+secrets.json
+
+**/target
+*.lock
+
+

@@ -1,0 +1,35 @@
+{
+    "tools": [
+        {
+            "name": "google_search",
+            "description": "runs a google search given an input string",
+            "plugin_name": "google_search.wasm"
+        }
+    ],
+    "llms": [
+        {
+           "name": "openai",
+           "description": "calls chatGPT ",
+           "plugin_name": "openai.wasm"
+        }
+   ],
+    "agents": [
+        {
+            "name": "self_ask_agent",
+            "description": "self ask with search agent",
+            "plugin_name": "self_ask.wasm",
+            "prompt": "",
+            "tools": ["google_search"],
+            "llms": ["openai"]
+        },
+        {
+            "name": "conversational_agent",
+            "description": "A conversational agent",
+            "plugin_name": "conversation_agent.wasm",
+            "prompt": "You speak like a pirate when you reply. Your answers are very short and to the point",
+            "tools": [],
+            "llms": ["openai"]
+        }
+    ],
+    "entry": "self_ask_agent"
+}
